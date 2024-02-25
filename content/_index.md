@@ -57,3 +57,5 @@ This Lateral Reading track will focus on the development of capabilities that ca
 
 ## Resources
 - <a href="https://cor.inquirygroup.org/">Stanford Civic Online Reasoning Curriculum</a>
+
+<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=yfhcEFYghS271TtCJcmJ0SjspX_z-s3xU5qVH31QqJk&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
