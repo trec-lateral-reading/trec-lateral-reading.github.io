@@ -26,7 +26,8 @@ This Lateral Reading track will focus on the development of capabilities that ca
         text-align: left; /* Align text to the left */
     }
     th:first-child, td:first-child {
-        width: 21%; /* Limit the width of the first column to 20% */
+        max-width: 21%; /* Set minimum width to 21% of the table/page width */
+        width: 150px;
     }
     /* Remove borders */
     td, th {
