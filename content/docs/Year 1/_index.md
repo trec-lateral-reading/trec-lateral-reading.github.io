@@ -13,3 +13,10 @@ type: docs
 - **Late June**: Task 2 Question Release
 - **Late August**: Task 2 Document Submission
 - **Late September**: Result Release
+
+## Q&A
+
+1. How do we participate in this track? \
+Please follow the TREC registration guideline at this link: https://trec.nist.gov/pubs/call2024.html.
+
+## Resources

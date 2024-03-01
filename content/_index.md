@@ -40,7 +40,7 @@ This Lateral Reading track will focus on the development of capabilities that ca
 
 <table>
     <tr>
-        <th><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hg46RfsAAAAJ&citpid=4" alt="Dake Zhang" title="picture_dake_zhang"/></th>
+        <th><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hg46RfsAAAAJ&citpid=7" alt="Dake Zhang" title="picture_dake_zhang"/></th>
         <td><b>Dake Zhang</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://zhangdake.com.cn/">Website</a> &nbsp; <a href="https://www.linkedin.com/in/zhangdake/">LinkedIn</a> &nbsp; <a href="https://twitter.com/ZhangDake1998">Twitter</a></td>
     </tr>
     <tr></tr>
