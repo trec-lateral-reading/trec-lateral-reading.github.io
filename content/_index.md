@@ -9,8 +9,14 @@ Notice: This website is still under construction.
 
 ## Overview
 
-All web search now requires people to be able to make judgments about the trustworthiness of information.
-This Lateral Reading track will focus on the development of capabilities that can be used to build tools that help people determine the trustworthiness of a given document.
+TREC Lateral Reading Track is a venue for researchers interested in addressing the problems of misinformation and trust in search and online content.
+Current web landscape requires the ability to make judgments about the trustworthiness of information, which is a difficult task for most people unfortunately.
+Lateral reading is a tested practice used by professional fact-checkers that involves asking questions about a document and then searching for answers via search engines.
+
+This track will focus on the development of capabilities that can be used to build tools that help people determine the trustworthiness of a given document.
+As such, the Lateral Reading track will not require a definition of what is true and what is misinformation, and thus the track can address trustworthiness beyond the relatively narrow focus of traditional fact-checking and claim verification.
+
+2024 is the first year of this track. More information, including tasks, timeline, evaluation metrics, can be found at [Year 1](./docs/Year-1/).
 
 
 ## Organizers
@@ -58,4 +64,4 @@ This Lateral Reading track will focus on the development of capabilities that ca
 ## Resources
 - <a href="https://cor.inquirygroup.org/">Stanford Civic Online Reasoning Curriculum</a>
 
-<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=yfhcEFYghS271TtCJcmJ0SjspX_z-s3xU5qVH31QqJk&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+<!-- <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=yfhcEFYghS271TtCJcmJ0SjspX_z-s3xU5qVH31QqJk&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script> -->
