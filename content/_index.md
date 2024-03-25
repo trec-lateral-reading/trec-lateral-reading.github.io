@@ -11,12 +11,14 @@ Notice: This website is still under construction.
 
 TREC Lateral Reading Track is a venue for researchers interested in addressing the problems of misinformation and trust in search and online content.
 Current web landscape requires the ability to make judgments about the trustworthiness of information, which is a difficult task for most people unfortunately.
-Lateral reading is a tested practice used by professional fact-checkers that involves asking questions about a document and then searching for answers via search engines.
+However, automated detection of misinformation is likely to remain limited to well-defined domains or be limited to simple fact-checking.
 
-This track will focus on the development of capabilities that can be used to build tools that help people determine the trustworthiness of a given document.
-As such, the Lateral Reading track will not require a definition of what is true and what is misinformation, and thus the track can address trustworthiness beyond the relatively narrow focus of traditional fact-checking and claim verification.
+[Wineburg and McGrew (2019)](https://journals.sagepub.com/doi/abs/10.1177/016146811912101102) discovered that professional fact checkers follow a process of *Lateral Reading* that involves asking questions about a document's sources and evidence and seeking answers to these questions via search engines in order to establish the document's trustworthiness.
 
-2024 is the first year of this track. More information, including tasks, timeline, evaluation metrics, can be found at [Year 1](./docs/Year-1/).
+This track will focus on developing technology that can be used to create systems that support the use of Lateral Reading to determine the trustworthiness of information.
+As such, it will not require a definition of what is true and what is misinformation, and thus the track can address trustworthiness beyond the relatively narrow focus of traditional fact-checking and claim verification.
+
+2024 is the first year of this track. More information can be found at [2024](./docs/2024/).
 
 
 ## Organizers
