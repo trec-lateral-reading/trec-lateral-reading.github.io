@@ -17,11 +17,10 @@ While directed education on how to do Lateral Reading can be an effective means 
 As such, an opportunity exists for systems to assist users with Lateral Reading by helping users understand what they should question about a document and helping them find other documents that can answer those questions.
 
 In the first year, this track has two tasks with separate deadlines. 
-For the first task, given a news article, participants need to raise questions to support users in performing Lateral Reading.
-The figure below shows some example questions for part of a news article on the left.
-After the deadline for Task 1, we will release the questions NIST assessors come up with to participants for the second task, where participants need to retrieve documents from the specified web collection to answer those questions.
+For Task 1, assuming there is a reader who is looking through an online news article, participants need to suggest questions that the reader should ask to determine its trustworthiness.
+After the deadline for Task 1, we will release the questions NIST assessors come up with for Task 2, where participants need to retrieve documents from the specified web collection to answer those questions.
 
-<img src="/lr_questions_example.png" alt="Example Questions for Lateral Reading" title="picture_lr_questions_example" style="border-radius: 0"/>
+<!--<img src="/lr_questions_example.png" alt="Example Questions for Lateral Reading" title="picture_lr_questions_example" style="border-radius: 0"/>-->
 
 ## Data
 
@@ -35,15 +34,34 @@ Considering the size of `ClueWeb22-B-English`, we suggest you obtain the collect
 
 As mentioned earlier, we have two tasks with separate submission due dates.
 
-- **Task 1: Question Generation**
-    - Given a news article, participants need to generate 10 questions that are useful for people to know when evaluating the trustworthiness of the article.
-    - **Provided Input**: <u>50 news articles</u> in plaintext from the data collection.
-    - **Expected Output**: <u>10 questions</u> that support Lateral Reading ranked by their importance for each article.
-    - After the submission due date of Task 1, we will make available the questions that NIST assessors raise during their evaluation of each news article.
-- **Task 2: Document Retrieval**
-    - Given a news article and 10 questions raised by NIST assessors, participants need to retrieve 10 documents from the web collection that help answer those questions.
-    - **Provided Input**: `ClueWeb22-B-English` and <u>50 news articles (each with 10 questions)</u>.
-    - **Expected Output**: <u>Top-10 ranked documents</u> as sources of answer to each question.
+### Tasks 1: Question Generation
+
+For each topic (news article), participants need to produce **10 questions** that the reader should ask to evaluate its trustworthiness, ranked by their importance to the evaluation from the most important to the least important. Those questions should meet the following requirements.
+- Should be self-contained and explain the full context, i.e., one can understand this question without reference to the article.
+- Should be at most 120 characters long.
+- Should be reasonably expected to be answered by a single web page.
+- Compound questions should be avoided, e.g. who is X and when did Y happen? In general, each question should focus on a single topic.
+
+Participants should put all the questions for those 50 articles into a single file, using the format below, and submit it to the track organizers.
+- It should be a tab-separated file.
+- It should be encoded in UTF-8.
+- Each line consists of the following tab-separated fields in this order: `topic_id`, `doc_id`, `run_tag`, `rank`, `question`.
+    - `topic_id`: Found as the first line of the news article, which is also the name of the document.
+    - `doc_id`: ClueWeb22 id, which is the second line of the news article.
+    - `run_tag`: Team name of the participant.
+    - `rank`: Rank of the question, starting from 1.
+    - `question`: Question in plaintext, with no tabs or newlines.
+
+Submissions can be either **manual** (involving human intervention to generate questions, e.g., hiring people to produce questions or manually selecting questions from a candidate list of questions produced by algorithms) or **automatic** (automatic systems to produce questions without the need of human input). After the submission due date of Task 1, we will make available the questions that NIST assessors raise during their evaluation of each news article.
+
+Here is an example news article with 10 questions we came up with to support the reader's trustworthiness evaluation. On February 21, 2023, the New York Times published an opinion article by Bret Stephens entitled "[The Mask Mandates Did Nothing. Will Any Lessons Be Learned?](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html?unlocked_article_code=gFPkTMW10NLmmWAaYVT8kUk5IJGdtqOT4oPTIljn-eqha-dQGMt5LbDNkcSGc-lPWwq88xHQztwlyXkwSvjA42AWwawLMaAd0GruPyysGxIHa4izksvdo7Rzs08-EuiXyFTG01aeEWnRqUzneqq92uwtQH8FPvptgSBG2nc2u5i7JZ-Q5yMFli4VgmS1-2XMEPxw4ZX_-FXhpdOse85-TnFMOHW1Oc1r0347aFhJ73iOcuIs6nBJu8GERP8f9dqxnFtJ_km19GyZsJCtPv7Q9I3RNo4ozPwIhlV0nqJfDGiOwP3GTfFyFh_OuqglmGDh3UAmSRtWsP0IhiGu&smid=url-share)". This [Google Document](https://docs.google.com/document/d/1qj2QZDz0ZTWukULId1-hYg2Cva2rmS13fk56WE192Jw/edit?usp=sharing) contains the plaintext version of this article. Stephens makes an argument that mask mandates during the COVID pandemic did not work. Given the importance of this issue, the reader would be advised to examine the trustworthiness of the information.
+As suggested by Lateral Reading, we want to ask about sources, evidence, and what others say about the issue. This [example file](/lateral-eg.txt) shows the 10 questions we came up with to evaluate the trustworthiness of this article, based on its plaintext version in the Google Document. In working to answer these questions, the reader would likely learn that Stephens is a conservative, that Tom Jefferson had previously published articles using other studies as evidence against masks, which received criticism from other scientists, that Maryanne Demasi is a journalist who has faced criticism for reports that go against scientific consensus, e.g. Wi-Fi is dangerous, and that the Cochrane study was misinterpreted as it was inconclusive about the question of if interventions to encourage mask wearing worked or not. This example file is what we expect participants to return for all the 50 articles.
+
+### Tasks 2: Document Retrieval
+
+- Given a news article and 10 questions raised by NIST assessors, participants need to retrieve 10 documents from the web collection that help answer those questions.
+- **Provided Input**: `ClueWeb22-B-English` and <u>50 news articles (each with 10 questions)</u>.
+- **Expected Output**: <u>Top-10 ranked documents</u> as sources of answer to each question.
         
 Since we will provide questions from NIST assessors for Task 2, participating in Task 2 does not require your participation in Task 1.
 You can choose to participate in either one or both tracks.
