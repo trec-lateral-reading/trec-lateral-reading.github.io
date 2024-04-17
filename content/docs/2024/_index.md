@@ -24,7 +24,7 @@ After the deadline for Task 1, we will release the questions NIST assessors come
 
 ## Data
 
-- **News Articles**: We will select 50 news articles, each about a different event, published in 2021 and 2022 from various sources. 
+- **News Articles**: This [compressed file](/articles.zip) contains the plaintext version of our selected 50 news articles, each about a different event, published in 2021 and 2022 from various sources. 
 - **Web Collection**: Task 2 will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB data (size of plaintext).
 This web collection was collected around February 2022. Please refer to their website for how to obtain the dataset.
 
@@ -69,9 +69,9 @@ You can choose to participate in either one or both tracks.
 ## Tentative Schedule
 
 - **Task 1 Article Release**: Early May
-- **Task 1 Question Generation <u>Submission Due</u>**: Late June
-- **Task 2 Question Release**: Mid June
-- **Task 2 Document Ranking <u>Submission Due</u>**: Late August
+- **Task 1 Question Generation <u>Submission Due</u>**: June 30
+- **Task 2 Question Release**: Early July
+- **Task 2 Document Ranking <u>Submission Due</u>**: August
 - **Result Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2024 Conference**: November 18-22 at NIST in Gaithersburg, MD, USA
