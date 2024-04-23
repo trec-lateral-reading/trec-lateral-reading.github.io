@@ -5,7 +5,7 @@ type: docs
 
 # TREC Lateral Reading Track
 
-Notice: This website is still under construction.
+## 2024 Guidelines Now Available [Here](./docs/2024/)
 
 ## Overview
 
