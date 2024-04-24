@@ -3,7 +3,7 @@ baseURL = 'https://trec-lateral-reading.github.io/'
 
 languageCode = 'en-us'
 
-title = 'TREC LR Home'
+title = 'Home'
 theme = 'hugo-book'
 
 # Book configuration
@@ -52,8 +52,8 @@ enableGitInfo = true
   weight = 10
 
 [[menu.after]]
-  name = "Google Groups"
-  url = "https://groups.google.com/g/trec-lateral-reading-track"
+  name = "Slack"
+  url = "https://trectalk.slack.com/archives/C065QFMRNBY"
   weight = 10
 
 #[[menu.after]]
