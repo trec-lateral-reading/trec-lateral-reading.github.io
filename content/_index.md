@@ -66,7 +66,7 @@ As suggested by Lateral Reading, we want to ask about sources, evidence, and wha
 ### Task 2: Document Retrieval
 
 After the due date of Task 1, we will release the questions produced by NIST assessors, 10 for each article.
-Participants need to retrieve 10 documents from the web collection `ClueWeb22-B-English` that help answer those questions, ranked by their usefulness.
+For each question, participants need to retrieve 10 documents from the web collection `ClueWeb22-B-English` that help answer those questions, ranked by their usefulness.
 This task is similar to a traditional ad-hoc retrieval task.
 As we will provide questions, to participate in Task 2 does not require your participation in Task 1.
 You can choose to participate in either one or both tracks.
@@ -75,13 +75,13 @@ Similar to Task 1, runs may be either automatic or manual.
 Submissions should follow the standard TREC run format below.
 - It should be a space-separated file.
 - It should be encoded in UTF-8.
-- Each line consists of the following tab-separated fields in this order: `query_id`, `Q0`, `doc_id`, `rank`, `score`, `run_tag`.
-    - `query_id`: Query id, which is a combination of the topic id and the question rank, e.g., 101 is the first question for the first news article.
-    - `Q0`: Unused column, whose value should be `Q0`.
+- Each line consists of the following tab-separated fields in this order: `question_id`, `Q0`, `doc_id`, `rank`, `score`, `run_tag`.
+    - `question_id`: Question id will be provided as part of the question distribution.
+    - `Q0`: Unused column, whose value should always be Q0.
     - `doc_id`: ClueWeb22 id of the retrieved document.
     - `rank`: Rank of the document, starting from 1.
-    - `score`: Score (integer or floating point) of the document, in non-increasing order. [trec_eval](https://trec.nist.gov/trec_eval/) sorts documents by the scores instead of the ranks.
-    - `run_tag`: A unique tag for this run, which should be a combination of your team name (prefix) and your method.
+    - `score`: Score (integer or floating point) of the document, in non-increasing order. [trec_eval](https://trec.nist.gov/trec_eval/) sorts documents by the scores instead of the ranks. The score is important to handle tied scores. 
+    - `run_tag`: A tag that uniquely identifies your group and the method you used to produce the run. Each run should have a different tag. Run tags for runs submitted by one group **must** all share a common prefix to identify the group across runs.
 
 ## Schedule
 
@@ -101,9 +101,11 @@ Evaluation details are to be determined.
 ## Q&A
 
 1. How do we register to participate in this track? \
-Please follow the TREC registration guidelines from their [Call for Participation](https://trec.nist.gov/pubs/call2024.html).
+*Please follow the TREC registration guidelines from their [Call for Participation](https://trec.nist.gov/pubs/call2024.html).*
 2. Why can't we join the Slack channel? \
-[#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) is in the TREC workspace. Please join the workspace first by following the instructions in the TREC 2024 welcome email after registration.
+*[#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) is in the TREC workspace. Please join the workspace first by following the instructions in the TREC 2024 welcome email after registration.*
+3. Is there a limit on how many runs each group can submit?\
+*Participating groups will be allowed to submit as many runs as they like, but they need authorization from the track organizers before submitting more than 10 runs per task. Not all runs are likely to be used for pooling and groups will need to specify a preference ordering for pooling purposes.*
 
 ## Organizers
 
@@ -142,7 +144,7 @@ Please follow the TREC registration guidelines from their [Call for Participatio
     </tr>
     <tr></tr>
     <tr>
-        <td><img src="https://media.licdn.com/dms/image/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_400_400/0/1630422355651?e=1714003200&v=beta&t=Pqi9Pu2m8gbYyE1HCWe-9oaqgU6zdqyo56h1Oxslzqo" alt="Charles L. A. Clarke" title="picture_charles_clarke" /></td>
+        <td><img src="https://media.licdn.com/dms/image/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_400_400/0/1630422355651?e=1719446400&v=beta&t=2QyxufK0jxrKwVoxpDN7oloVNDUsuMrttJy646BBHDQ" alt="Charles L. A. Clarke" title="picture_charles_clarke" /></td>
         <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke">Twitter</a></td>
     </tr>
 </table>
