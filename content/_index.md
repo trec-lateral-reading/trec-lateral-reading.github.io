@@ -1,4 +1,4 @@
----
+  ---
 weight: 1
 title: 2024
 type: docs
@@ -15,29 +15,31 @@ This track is for researchers interested in addressing the problems of misinform
 The current web landscape requires the ability to make judgments about the trustworthiness of information, which is a difficult task for most people.
 Meanwhile, automated detection of misinformation is likely to remain limited to well-defined domains or be limited to simple fact-checking.
 
-[Wineburg and McGrew (2019)](https://journals.sagepub.com/doi/abs/10.1177/016146811912101102) discovered that professional fact-checkers follow a process of **Lateral Reading** that involves asking questions about a document's sources and evidence and seeking answers to these questions via search engines in order to establish the document's trustworthiness.
-In the first year of this track, our goal is to explore NLP and IR technologies to support the tested practice of lateral reading during people's trustworthiness evaluation of online news, given the civic importance of trustworthy news and a decline in trust in news over the years [(Brenan, 2022)](https://news.gallup.com/poll/403166/americans-trust-media-remains-near-record-low.aspx).
+[Wineburg and McGrew (2019)](https://journals.sagepub.com/doi/abs/10.1177/016146811912101102) discovered that professional fact-checkers follow a process of **Lateral Reading** that involves asking questions about a document's source and evidence and seeking answers to these questions via search engines in order to establish the document's trustworthiness.
+In the first year of this track, our goal is to explore NLP and IR technologies to support the tested practice of lateral reading during people's trustworthiness evaluation of **online news**, given the civic importance of trustworthy news and a decline in trust in news over the years [(Brenan, 2022)](https://news.gallup.com/poll/403166/americans-trust-media-remains-near-record-low.aspx).
 As such, it will not require a definition of what is true and what is misinformation, and thus the track can address trustworthiness beyond the relatively narrow focus of traditional fact-checking and claim verification.
 
 While teaching people how to do lateral reading can be an effective means of helping people better evaluate the trustworthiness of information [(McGrew et al., 2019)](https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjep.12279), this training cannot easily reach the millions of people who use the Internet and are finished with their schooling.
 As such, an opportunity exists for systems to assist users with lateral reading by helping users understand what they should question about a document and helping them find other documents that can answer those questions.
 For example, imagine a "Lateral Reading Copilot" that could assist or nudge people towards lateral reading behaviors when reading web pages.
 
-In the first year, this track has two tasks with separate deadlines. 
+In the first year, this track has **two tasks with separate deadlines**. 
 For [Task 1](#task-1-question-generation), participants need to suggest questions that a reader of an online target news article should ask to determine its trustworthiness.
-We will have NIST assessors manually perform this task to produce the questions they believe are most important.
+At the same time, we will have NIST assessors manually perform this task to produce the questions they believe are most important.
 After the deadline for Task 1, we will release the NIST assessors' Task 1 questions as input to [Task 2](#task-2-document-retrieval), where participants need to retrieve documents from the specified web collection to answer those questions.
 
 <!--<img src="/lr_questions_example.png" alt="Example Questions for Lateral Reading" title="picture_lr_questions_example" style="border-radius: 0"/>-->
 
 ## Data
 
-- **News Articles**: [articles.jsonl](/articles.jsonl) contains the ClueWeb22 JSONL records (plaintext version) for the 50 target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources. 
-- **Web Collection**: Task 2 will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB data (size of plaintext).
+- **Web Collection**: This track will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB data (size of plaintext).
 This web collection was collected around February 2022. Please refer to their website for how to obtain the dataset.
 The `ClueWeb22-B-English` subset is found in `cw22-b/txt/en` for plaintext and `cw22-b/html/en` for WARC format, etc.
-
-Considering the size of `ClueWeb22-B-English`, we suggest you obtain the collection as soon as possible, ideally before the release of questions for Task 2.
+Considering the size of `ClueWeb22-B-English`, we suggest you obtain the collection as soon as possible.
+- **News Articles**: [trec-2024-lateral-reading-task1-articles.txt](/trec-2024-lateral-reading-task1-articles.txt) contains the the ClueWeb22-IDs of 50 selected target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources.
+Under the use agreement of ClueWeb22, we can not directly provide the extracted plaintext contents of those articles.
+We are working with CMU who can help us distribute a subset of ClueWeb22 used for this track, i.e., 50 articles for Task 1 in plaintext and probably baseline runs with document content for Task 2, after participants signed the use agreement with them.
+Please stay tuned for updates.
 
 ## Tasks
 
@@ -45,7 +47,7 @@ As mentioned earlier, we have two tasks with separate submission due dates.
 
 ### Task 1: Question Generation
 
-For each of the 50 topics (i.e., target news article), participants need to produce 10 questions that the reader should ask to evaluate its trustworthiness, ranked from the most important to the least important to ask. Those questions should meet the following requirements.
+For each of the 50 topics (i.e., target news articles), participants need to produce 10 questions that the reader should ask to evaluate its trustworthiness, ranked from the most important to the least important to ask. Those questions should meet the following requirements.
 - Should be self-contained and explain the full context, i.e., one can understand this question without reference to the article.
 - Should be at most 120 characters long.
 - Should be reasonably expected to be answered by a single web page.
@@ -55,7 +57,7 @@ Participants should put all the questions for those 50 articles into a single fi
 - It should be a tab-separated file.
 - It should be encoded in UTF-8.
 - Each line consists of the following tab-separated fields in this order: `topic_id`, `run_tag`, `rank`, `question`.
-    - `topic_id`: ClueWeb22-ID of the target news article, as found in the JSONL record.
+    - `topic_id`: ClueWeb22-ID of the target news article.
     - `run_tag`: A tag that uniquely identifies your group and the method you used to produce the run. Each run should have a different tag. Run tags for runs submitted by one group **must** all share a common prefix to identify the group across runs.
     - `rank`: Your rank for the question, starting from 1.
     - `question`: Question in plaintext, with no tabs or newlines.
@@ -65,10 +67,9 @@ Teams submitting automatic runs should make a good faith effort to not read or s
 After the submission due date of Task 1, we will make available the questions that NIST assessors raise during their evaluation of each news article.
 
 **Example article and questions**: On February 21, 2023, the New York Times published an opinion article by Bret Stephens entitled ["The Mask Mandates Did Nothing. Will Any Lessons Be Learned?"](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html?unlocked_article_code=gFPkTMW10NLmmWAaYVT8kUk5IJGdtqOT4oPTIljn-eqha-dQGMt5LbDNkcSGc-lPWwq88xHQztwlyXkwSvjA42AWwawLMaAd0GruPyysGxIHa4izksvdo7Rzs08-EuiXyFTG01aeEWnRqUzneqq92uwtQH8FPvptgSBG2nc2u5i7JZ-Q5yMFli4VgmS1-2XMEPxw4ZX_-FXhpdOse85-TnFMOHW1Oc1r0347aFhJ73iOcuIs6nBJu8GERP8f9dqxnFtJ_km19GyZsJCtPv7Q9I3RNo4ozPwIhlV0nqJfDGiOwP3GTfFyFh_OuqglmGDh3UAmSRtWsP0IhiGu&smid=url-share).
-This [Google Document](https://docs.google.com/document/d/1qj2QZDz0ZTWukULId1-hYg2Cva2rmS13fk56WE192Jw/edit?usp=sharing) contains the plaintext version of this article.
 (Note that this document is not part of the ClueWeb22 collection.)
 In the article, Stephens makes an argument that mask mandates during the COVID pandemic did not work. Given the importance of this issue, the reader would be advised to examine the trustworthiness of the information.
-As suggested by lateral reading, we want to ask about sources, evidence, and what others say about the issue. This example file [lateral-eg.txt](/lateral-eg.txt) shows the 10 questions we manually created to evaluate the trustworthiness of this article, based on its plaintext version in the Google Document. In working to answer these questions, the reader would likely learn that Stephens is a conservative, that Tom Jefferson had previously published articles using other studies as evidence against masks, which received criticism from other scientists, that Maryanne Demasi is a journalist who has faced criticism for reports that go against scientific consensus, e.g. Wi-Fi is dangerous, and that the Cochrane study was misinterpreted as it was inconclusive about the question of if interventions to encourage mask wearing worked or not.
+As suggested by lateral reading, we want to ask about sources, evidence, and what others say about the issue. This example file [trec-2024-lateral-reading-example-questions.txt](/trec-2024-lateral-reading-example-questions.txt) shows the 10 questions we manually created to evaluate the trustworthiness of this article, based on the plaintext content of this article. In working to answer these questions, the reader would likely learn that Stephens is a conservative, that Tom Jefferson had previously published articles using other studies as evidence against masks, which received criticism from other scientists, that Maryanne Demasi is a journalist who has faced criticism for reports that go against scientific consensus, e.g. Wi-Fi is dangerous, and that the Cochrane study was misinterpreted as it was inconclusive about the question of if interventions to encourage mask wearing worked or not.
 A file in the format of this example is what we expect participants to return, containing questions for all the 50 articles.
 
 ### Task 2: Document Retrieval
@@ -86,7 +87,7 @@ The format for the question file is a tab-separated file with the following thre
 Similar to Task 1, runs may be either automatic or manual.
 Submissions should follow the standard TREC run format below.
 - It should be a space-separated file.
-- It should be encoded in UTF-8.
+- It should be encoded in ASCII.
 - Each line consists of the following space-separated fields in this order: `question_id`, `Q0`, `doc_id`, `rank`, `score`, `run_tag`.
     - `question_id`: Unique question id from the question file (above).
     - `Q0`: Unused column, whose value should always be Q0.
@@ -97,7 +98,7 @@ Submissions should follow the standard TREC run format below.
 
 ## Schedule
 
-- **Task 1 Article Released**: April 23
+- **Task 1 Article Released**: Early May
 - **Task 1 Question Generation <u>Submission Due</u>**: June 30
 - **Task 2 Question Release**: Early July
 - **Task 2 Document Ranking <u>Submission Due</u>**: August
