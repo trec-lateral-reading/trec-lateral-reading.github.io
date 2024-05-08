@@ -37,9 +37,8 @@ This web collection was collected around February 2022. Please refer to their we
 The `ClueWeb22-B-English` subset is found in `cw22-b/txt/en` for plaintext and `cw22-b/html/en` for WARC format, etc.
 Considering the size of `ClueWeb22-B-English`, we suggest you obtain the collection as soon as possible.
 - **News Articles**: [trec-2024-lateral-reading-task1-articles.txt](/trec-2024-lateral-reading-task1-articles.txt) contains the the ClueWeb22-IDs of 50 selected target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources.
-Under the use agreement of ClueWeb22, we can not directly provide the extracted plaintext contents of those articles.
-We are working with CMU who can help us distribute a subset of ClueWeb22 used for this track, i.e., 50 articles for Task 1 in plaintext and probably baseline runs with document content for Task 2, after participants signed the use agreement with them.
-Please stay tuned for updates.
+If you have not yet obtained the collection, you can obtain the 50 documents (plaintext version) from CMU for free once you have signed a licensing agreement with them.
+To obtain this 50-document subset, please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the TREC-LR-2024-T1 subset.
 
 ## Tasks
 
