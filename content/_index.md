@@ -100,7 +100,7 @@ Submissions should follow the standard TREC run format below.
 - **Task 1 Article Released**: Early May
 - **Task 1 Question Generation <u>Submission Due</u>**: June 30
 - **Task 2 Question Release**: Early July
-- **Task 2 Document Ranking <u>Submission Due</u>**: August
+- **Task 2 Document Ranking <u>Submission Due</u>**: August 30
 - **Result Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2024 Conference**: November 18-22 at NIST in Gaithersburg, MD, USA
