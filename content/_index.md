@@ -8,6 +8,8 @@ type: docs
 
 **Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) or join our Slack channel [#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) for important announcements and discussions.**
 
+**Important Update**: Due to the delay in hiring assessors at NIST, we are extending the deadline for Task 1 to **July 26**. Instead of having assessors produce questions for Task 2, we will pool questions from Task 1 submissions, which will be released in early August. The deadline for Task 2 might also be extended accordingly. Please stay tuned for updates.
+
 ## Overview
 
 Welcome to the TREC 2024 Lateral Reading Track.
@@ -25,8 +27,9 @@ For example, imagine a "Lateral Reading Copilot" that could assist or nudge peop
 
 In the first year, this track has **two tasks with separate deadlines**. 
 For [Task 1](#task-1-question-generation), participants need to suggest questions that a reader of an online target news article should ask to determine its trustworthiness.
-At the same time, we will have NIST assessors manually perform this task to produce the questions they believe are most important.
-After the deadline for Task 1, we will release the NIST assessors' Task 1 questions as input to [Task 2](#task-2-document-retrieval), where participants need to retrieve documents from the specified web collection to answer those questions.
+After the deadline for Task 1, we will pool submitted questions as input to [Task 2](#task-2-document-retrieval), where participants need to retrieve documents from the specified web collection to answer those questions.
+<!--At the same time, we will have NIST assessors manually perform this task to produce the questions they believe are most important.
+After the deadline for Task 1, we will release the NIST assessors' Task 1 questions as input to [Task 2](#task-2-document-retrieval), where participants need to retrieve documents from the specified web collection to answer those questions.-->
 
 <!--<img src="/lr_questions_example.png" alt="Example Questions for Lateral Reading" title="picture_lr_questions_example" style="border-radius: 0"/>-->
 
@@ -63,7 +66,7 @@ Participants should put all the questions for those 50 articles into a single fi
 
 Submissions can be either **manual** (involving human intervention to generate questions, e.g., hiring people to produce questions or manually selecting questions from a candidate list of questions produced by algorithms or other human involvement in the question generation process) or **automatic** (automatic systems that produce questions without the need of human input beyond the construction of the systems). 
 Teams submitting automatic runs should make a good faith effort to not read or study the 50 articles.
-After the submission due date of Task 1, we will make available the questions that NIST assessors raise during their evaluation of each news article.
+<!--After the submission due date of Task 1, we will make available the questions that NIST assessors raise during their evaluation of each news article.-->
 
 **Example article and questions**: On February 21, 2023, the New York Times published an opinion article by Bret Stephens entitled ["The Mask Mandates Did Nothing. Will Any Lessons Be Learned?"](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html?unlocked_article_code=gFPkTMW10NLmmWAaYVT8kUk5IJGdtqOT4oPTIljn-eqha-dQGMt5LbDNkcSGc-lPWwq88xHQztwlyXkwSvjA42AWwawLMaAd0GruPyysGxIHa4izksvdo7Rzs08-EuiXyFTG01aeEWnRqUzneqq92uwtQH8FPvptgSBG2nc2u5i7JZ-Q5yMFli4VgmS1-2XMEPxw4ZX_-FXhpdOse85-TnFMOHW1Oc1r0347aFhJ73iOcuIs6nBJu8GERP8f9dqxnFtJ_km19GyZsJCtPv7Q9I3RNo4ozPwIhlV0nqJfDGiOwP3GTfFyFh_OuqglmGDh3UAmSRtWsP0IhiGu&smid=url-share).
 (Note that this document is not part of the ClueWeb22 collection.)
@@ -73,7 +76,8 @@ A file in the format of this example is what we expect participants to return, c
 
 ### Task 2: Document Retrieval
 
-After the due date of Task 1, we will release the questions produced by NIST assessors, 10 for each article.
+<!--After the due date of Task 1, we will release the questions produced by NIST assessors, 10 for each article.-->
+After the due date of Task 1, we will pool questions from Task 1 submissions, resulting in 10 questions for each article. 
 For each question, participants need to retrieve 10 documents from the web collection `ClueWeb22-B-English` that help answer those questions, ranked by their usefulness.
 This task is similar to a traditional ad-hoc retrieval task.
 As we will provide questions, to participate in Task 2 does not require your participation in Task 1.
@@ -98,16 +102,16 @@ Submissions should follow the standard TREC run format below.
 ## Schedule
 
 - **Task 1 Article Released**: Early May
-- **Task 1 Question Generation <u>Submission Due</u>**: June 30
-- **Task 2 Question Release**: Early July
-- **Task 2 Document Ranking <u>Submission Due</u>**: August 30
+- **Task 1 Question Generation <u>Submission Due</u>**: ~~June 30~~ July 26
+- **Task 2 Question Release**: ~~Early July~~ Early August
+- **Task 2 Document Ranking <u>Submission Due</u>**: August 30 (might be extended)
 - **Result Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2024 Conference**: November 18-22 at NIST in Gaithersburg, MD, USA
 
 ## Evaluation
 
-NIST assessors will judge the usefulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
+NIST assessors will judge the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
 Evaluation details are to be determined.
 As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.
 
@@ -157,7 +161,7 @@ As part of the Task 1 evaluation, we will consider the overlap between the quest
     </tr>
     <tr></tr>
     <tr>
-        <td><img src="https://media.licdn.com/dms/image/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_400_400/0/1630422355651?e=1719446400&v=beta&t=2QyxufK0jxrKwVoxpDN7oloVNDUsuMrttJy646BBHDQ" alt="Charles L. A. Clarke" title="picture_charles_clarke" /></td>
+        <td><img src="https://media.licdn.com/dms/image/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_400_400/0/1630422355651?e=1726704000&v=beta&t=NPSUHRlIepSSpfp9bbrerc_9QVTnou_9oNH_U6ltK38" alt="Charles L. A. Clarke" title="picture_charles_clarke" /></td>
         <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke">Twitter</a></td>
     </tr>
 </table>
