@@ -8,7 +8,7 @@ type: docs
 
 **Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) or join our Slack channel [#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) for important announcements and discussions.**
 
-**Important Update**: Due to the delay in hiring assessors at NIST, we are extending the deadline for Task 1 to **July 26**. Instead of having assessors produce questions for Task 2, we will pool questions from Task 1 submissions, which will be released in early August. The deadline for Task 2 might also be extended accordingly. Please stay tuned for updates.
+**Important Update**: Due to the delay in hiring assessors at NIST, we are extending the deadline for Task 1 to **July 26**. Instead of having assessors produce questions for Task 2, we will pool questions from Task 1 submissions, which will be released in early August. The deadline for Task 2 is also extended to **September 8**.
 
 ## Overview
 
@@ -104,7 +104,7 @@ Submissions should follow the standard TREC run format below.
 - **Task 1 Article Released**: Early May
 - **Task 1 Question Generation <u>Submission Due</u>**: ~~June 30~~ July 26
 - **Task 2 Question Release**: ~~Early July~~ Early August
-- **Task 2 Document Ranking <u>Submission Due</u>**: August 30 (might be extended)
+- **Task 2 Document Ranking <u>Submission Due</u>**: ~~August 30~~ September 8
 - **Result Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2024 Conference**: November 18-22 at NIST in Gaithersburg, MD, USA
