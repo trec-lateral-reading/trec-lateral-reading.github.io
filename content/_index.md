@@ -87,6 +87,7 @@ The question file is a tab-separated file with the following fields:
 
 Note that the pooled questions may not satisfy the requirements for Task 1, e.g., some questions may not be self-contained or understandable without the context of the news article.
 Those questions might be discarded during the evaluation of Task 2 submissions.
+Meanwhile, participants are free to use the target news articles in addition to the pooled questions during their retrieval processes.
 
 Runs can be either **full rank** or **rerank**.
 We have prepared a BM25-RM3 baseline run ([Organizers-Baseline-BM25RM3](/Organizers-Baseline-BM25RM3)) and participants can rerank the top 100 retrieved results using BM25 (`k1 = 0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in [Pyserini](https://github.com/castorini/pyserini), without the hassle to index the full collection.
