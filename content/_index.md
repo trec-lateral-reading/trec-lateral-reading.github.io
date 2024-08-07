@@ -8,7 +8,7 @@ type: docs
 
 **Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) or join our Slack channel [#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) for important announcements and discussions.**
 
-**Important Update**: Due to the delay in hiring assessors at NIST, we are extending the deadline for Task 1 to **July 26**. Instead of having assessors produce questions for Task 2, we will pool questions from Task 1 submissions, which will be released in early August. The deadline for Task 2 is also extended to **September 8**.
+**Important Update**: The questions for Task 2 have been released. The submission deadline is **September 8**.
 
 ## Overview
 
@@ -35,27 +35,27 @@ After the deadline for Task 1, we will release the NIST assessors' Task 1 questi
 
 ## Data
 
-- **Web Collection**: This track will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB data (size of plaintext).
-This web collection was collected around February 2022. Please refer to their website for how to obtain the dataset.
+- **Web Collection**: This track will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB of data (size of plaintext).
+This web collection was collected around February 2022. Please refer to their [website](https://www.lemurproject.org/clueweb22/obtain.php) for how to obtain the dataset.
 The `ClueWeb22-B-English` subset is found in `cw22-b/txt/en` for plaintext and `cw22-b/html/en` for WARC format, etc.
-Considering the size of `ClueWeb22-B-English`, we suggest you obtain the collection as soon as possible.
+Considering the size of `ClueWeb22-B-English`, we suggest obtain the collection as soon as possible.
 - **News Articles**: [trec-2024-lateral-reading-task1-articles.txt](/trec-2024-lateral-reading-task1-articles.txt) contains the the ClueWeb22-IDs of 50 selected target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources.
-If you have not yet obtained the collection, you can obtain the 50 documents (plaintext version) from CMU for free once you have signed a licensing agreement with them.
-To obtain this 50-document subset, please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the TREC-LR-2024-T1 subset.
+If participants have not yet obtained the collection, they can obtain the 50 documents (plaintext version) from CMU for free once they have signed a licensing agreement with them.
+To obtain this 50-document subset, please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the `TREC-LR-2024-T1` subset.
 
 ## Tasks
 
-As mentioned earlier, we have two tasks with separate submission due dates.
+Assume there is a (general public) reader who is looking through online news. This track has the following two tasks with separate submission due dates.
 
 ### Task 1: Question Generation
 
-For each of the 50 topics (i.e., target news articles), participants need to produce 10 questions that the reader should ask to evaluate its trustworthiness, ranked from the most important to the least important to ask. Those questions should meet the following requirements.
+For each of the 50 topics (i.e., target news articles), participants need to produce **10** questions that the reader should ask to evaluate its trustworthiness, ranked from the most important to the least important to ask. Those questions should meet the following requirements.
 - Should be self-contained and explain the full context, i.e., one can understand this question without reference to the article.
 - Should be at most 120 characters long.
 - Should be reasonably expected to be answered by a single web page.
 - Compound questions should be avoided, e.g. who is X and when did Y happen? In general, each question should focus on a single topic.
 
-Participants should put all the questions for those 50 articles into a single file, using the format below, and submit it to NIST.
+Participants should put all the questions for those 50 articles into a single file, using the format below, and submit it to NIST via [Evalbase](https://ir.nist.gov/evalbase/).
 - It should be a tab-separated file.
 - It should be encoded in UTF-8.
 - Each line consists of the following tab-separated fields in this order: `topic_id`, `run_tag`, `rank`, `question`.
@@ -76,19 +76,25 @@ A file in the format of this example is what we expect participants to return, c
 
 ### Task 2: Document Retrieval
 
-<!--After the due date of Task 1, we will release the questions produced by NIST assessors, 10 for each article.-->
-After the due date of Task 1, we will pool questions from Task 1 submissions, resulting in 10 questions for each article. 
-For each question, participants need to retrieve 10 documents from the web collection `ClueWeb22-B-English` that help answer those questions, ranked by their usefulness.
+We have pooled 12 questions for each topic (i.e., target news article) from those submitted by participants in Task 1: [trec-2024-lateral-reading-task2-questions.txt](/trec-2024-lateral-reading-task2-questions.txt).
+In Task 2, for each question, participants need to retrieve **10** documents from the web collection `ClueWeb22-B-English` that are useful for answering those questions in the context of the corresponding news article, ranked by their usefulness.
 This task is similar to a traditional ad-hoc retrieval task.
-As we will provide questions, to participate in Task 2 does not require your participation in Task 1.
-You can choose to participate in either one or both tasks.
-The format for the question file is a tab-separated file with the following three fields:
+As we provide questions, to participate in Task 2 does not require your participation in Task 1.
+The question file is a tab-separated file with the following fields:
 - `question_id`: Unique identifier for the question. No two questions will have the same identifier, even across different topics.
 - `topic_id`: ClueWeb22-ID of the target news article, associated with the question.
-- `question`: Question in plaintext, with no tabs or newlines. The question should be answered in the context of the target news article,  but it is self-contained and should be understandable without the context of the news article.
+- `question`: Question in plaintext, with no tabs or newlines. 
 
-Similar to Task 1, runs may be either automatic or manual.
-Submissions should follow the standard TREC run format below.
+Note that the pooled questions may not satisfy the requirements for Task 1, e.g., some questions may not be self-contained or understandable without the context of the news article.
+Those questions might be discarded during the evaluation of Task 2 submissions.
+
+Runs can be either **full rank** or **rerank**.
+We have prepared a BM25-RM3 baseline run ([Organizers-Baseline-BM25RM3](/Organizers-Baseline-BM25RM3)) and participants can rerank the top 100 retrieved results using BM25 (`k1 = 0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in [Pyserini](https://github.com/castorini/pyserini), without the hassle to index the full collection.
+Participants who want to rerank the baseline run can request the plaintext version of those retrieved documents (about 1 GB in JSONL format) from CMU after signing a licensing agreement with them.
+Please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the `TREC-LR-2024-T2` subset.
+
+Similar to Task 1, runs may be either **automatic** or **manual**.
+Participants should follow the standard TREC run format below and submit their runs to NIST via [Evalbase](https://ir.nist.gov/evalbase/).
 - It should be a space-separated file.
 - It should be encoded in ASCII.
 - Each line consists of the following space-separated fields in this order: `question_id`, `Q0`, `doc_id`, `rank`, `score`, `run_tag`.
@@ -103,7 +109,7 @@ Submissions should follow the standard TREC run format below.
 
 - **Task 1 Article Released**: Early May
 - **Task 1 Question Generation <u>Submission Due</u>**: ~~June 30~~ July 26
-- **Task 2 Question Release**: ~~Early July~~ Early August
+- **Task 2 Question Released**: August 7
 - **Task 2 Document Ranking <u>Submission Due</u>**: ~~August 30~~ September 8
 - **Result Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
