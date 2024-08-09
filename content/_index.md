@@ -90,7 +90,7 @@ Those questions might be discarded during the evaluation of Task 2 submissions.
 Meanwhile, participants are free to use the target news articles in addition to the pooled questions during their retrieval processes.
 
 Runs can be either **full rank** or **rerank**.
-We have prepared a BM25-RM3 baseline run ([Organizers-Baseline-BM25RM3](/Organizers-Baseline-BM25RM3)) and participants can rerank the top 100 retrieved results using BM25 (`k1 = 0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in [Pyserini](https://github.com/castorini/pyserini), without the hassle to index the full collection.
+We have prepared a BM25-RM3 baseline run ([Organizers-Baseline-BM25RM3](/Organizers-Baseline-BM25RM3)) and participants can rerank the top 100 retrieved results using BM25 (`k1=0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in [Pyserini](https://github.com/castorini/pyserini), without the hassle to index the full collection.
 Participants who want to rerank the baseline run can request the plaintext version of those retrieved documents (about 1 GB in JSONL format) from CMU after signing a licensing agreement with them.
 Please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the `TREC-LR-2024-T2` subset.
 
