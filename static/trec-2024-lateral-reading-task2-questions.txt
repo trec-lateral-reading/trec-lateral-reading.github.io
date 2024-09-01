@@ -250,7 +250,6 @@ clueweb22-en0018-59-04061-Q09	clueweb22-en0018-59-04061	What evidence supports I
 clueweb22-en0018-59-04061-Q10	clueweb22-en0018-59-04061	How does Canada's Parliament define and recognize genocide?
 clueweb22-en0018-59-04061-Q11	clueweb22-en0018-59-04061	What is Canada's official position regarding its treatment of the Indigenous population?
 clueweb22-en0018-59-04061-Q12	clueweb22-en0018-59-04061	How has the Canadian government responded to accusations concerning the Indian Residential Schools?
-clueweb22-en0018-73-1003-Q01	clueweb22-en0018-73-1003	Is the method of enforcement for the Texas Heartbeat Act unique compared to other similar laws?
 clueweb22-en0018-73-10035-Q01	clueweb22-en0018-73-10035	How is the "100 babies saved daily" figure in the Texas Heartbeat Act verified?
 clueweb22-en0018-73-10035-Q02	clueweb22-en0018-73-10035	What is the professional background of Rebecca Parma, the senior legislative associate at Texas Right to Life?
 clueweb22-en0018-73-10035-Q03	clueweb22-en0018-73-10035	What is Texas Right to Life's reputation?
@@ -259,9 +258,10 @@ clueweb22-en0018-73-10035-Q05	clueweb22-en0018-73-10035	What defines 'aiding and
 clueweb22-en0018-73-10035-Q06	clueweb22-en0018-73-10035	What are the conditions under which someone can be sued under the Texas Heartbeat Act?
 clueweb22-en0018-73-10035-Q07	clueweb22-en0018-73-10035	Are civil penalties effective in pro-life laws?
 clueweb22-en0018-73-10035-Q08	clueweb22-en0018-73-10035	What are the potential biases of Texas Right to Life?
-clueweb22-en0018-73-10035-Q09	clueweb22-en0018-73-10035	Has the Texas Heartbeat Act reduced abortion rates?
-clueweb22-en0018-73-10035-Q10	clueweb22-en0018-73-10035	Can private citizens effectively enforce abortion laws like Texas' Heartbeat Act?
-clueweb22-en0018-73-10035-Q11	clueweb22-en0018-73-10035	What is the stance of the American College of Obstetricians and Gynecologists (ACOG) on the Texas Heartbeat Act?
+clueweb22-en0018-73-10035-Q09	clueweb22-en0018-73-10035	Is the method of enforcement for the Texas Heartbeat Act unique compared to other similar laws?
+clueweb22-en0018-73-10035-Q10	clueweb22-en0018-73-10035	Has the Texas Heartbeat Act reduced abortion rates?
+clueweb22-en0018-73-10035-Q11	clueweb22-en0018-73-10035	Can private citizens effectively enforce abortion laws like Texas' Heartbeat Act?
+clueweb22-en0018-73-10035-Q12	clueweb22-en0018-73-10035	What is the stance of the American College of Obstetricians and Gynecologists (ACOG) on the Texas Heartbeat Act?
 clueweb22-en0019-43-01843-Q01	clueweb22-en0019-43-01843	What is the WHO's target efficacy for malaria vaccines?
 clueweb22-en0019-43-01843-Q02	clueweb22-en0019-43-01843	What are the potential conflicts of interest for Adrian Hill in promoting the R21/MM malaria vaccine?
 clueweb22-en0019-43-01843-Q03	clueweb22-en0019-43-01843	Is Adrian Hill a credible source on malaria vaccine research?
