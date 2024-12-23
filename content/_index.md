@@ -6,9 +6,7 @@ type: docs
 
 # TREC 2024 Lateral Reading Track Guidelines
 
-**Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) or join our Slack channel [#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) for important announcements and discussions.**
-
-**Important Update**: The questions for Task 2 have been released. The submission deadline is **September 8**.
+**This track will continue in 2025, with a new name to be determined. Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) for updates and discussions.**
 
 ## Overview
 
@@ -112,8 +110,8 @@ Participants should follow the standard TREC run format below and submit their r
 - **Task 1 Question Generation <u>Submission Due</u>**: ~~June 30~~ July 26
 - **Task 2 Question Released**: August 7
 - **Task 2 Document Ranking <u>Submission Due</u>**: ~~August 30~~ September 8
-- **Result Release**: Late September
-- **Notebook <u>Paper Due</u>**: Late October
+- **Result Release**: ~~Late September~~ November 5
+- **Notebook <u>Paper Due</u>**: ~~Late October~~ November 10
 - **TREC 2024 Conference**: November 18-22 at NIST in Gaithersburg, MD, USA
 
 ## Evaluation
@@ -159,17 +157,17 @@ As part of the Task 1 evaluation, we will consider the overlap between the quest
 <table>
     <tr>
         <th><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hg46RfsAAAAJ&citpid=7" alt="Dake Zhang" title="picture_dake_zhang"/></th>
-        <td><b>Dake Zhang</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://zhangdake.com.cn/">Website</a> &nbsp; <a href="https://www.linkedin.com/in/zhangdake/">LinkedIn</a> &nbsp; <a href="https://twitter.com/ZhangDake1998">Twitter</a></td>
+        <td><b>Dake Zhang</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://zhangdake.tech/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/zhangdake/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/ZhangDake1998" target="_blank">Twitter</a></td>
     </tr>
     <tr></tr>
     <tr>
         <td><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=BgiGGQQAAAAJ&citpid=4" alt="Mark D. Smucker" title="picture_mark_smucker" /></td>
-        <td><b>Mark D. Smucker</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://uwaterloo.ca/management-science-engineering/profile/msmucker">Website</a> &nbsp; <a href="https://www.linkedin.com/in/mark-smucker-168144134/">LinkedIn</a> </td>
+        <td><b>Mark D. Smucker</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://uwaterloo.ca/management-science-engineering/profile/msmucker" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/mark-smucker-168144134/" target="_blank">LinkedIn</a> </td>
     </tr>
     <tr></tr>
     <tr>
-        <td><img src="https://media.licdn.com/dms/image/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_400_400/0/1630422355651?e=1726704000&v=beta&t=NPSUHRlIepSSpfp9bbrerc_9QVTnou_9oNH_U6ltK38" alt="Charles L. A. Clarke" title="picture_charles_clarke" /></td>
-        <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke">Twitter</a></td>
+        <td><img src="https://media.licdn.com/dms/image/v2/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1630422355651?e=1740614400&v=beta&t=1d22I9TSIY29IIpC5OMGQ1Flpxyk14x_f-XPkKrMblQ" /></td>
+        <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke" target="_blank">Twitter</a></td>
     </tr>
 </table>
 
