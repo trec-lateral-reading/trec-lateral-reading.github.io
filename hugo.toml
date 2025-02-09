@@ -43,7 +43,7 @@ enableGitInfo = true
 
 [[menu.after]]
   name = "Twitter"
-  url = "https://twitter.com/TREC_LR"
+  url = "https://twitter.com/TREC_DRAGUN"
   weight = 10
 
 [[menu.after]]

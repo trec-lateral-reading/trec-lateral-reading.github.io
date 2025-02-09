@@ -6,7 +6,7 @@ type: docs
 
 # TREC 2024 Lateral Reading Track Guidelines
 
-**This track will continue in 2025, with a new name to be determined. Please follow our Twitter account [@TREC_LR](https://twitter.com/TREC_LR) for updates and discussions.**
+**This 2024 track has concluded, and its successor, the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/) will continue in 2025. Please follow our X account [@TREC_DRAGUN](https://x.com/TREC_DRAGUN) for updates and discussions. DRAGUN stands for "Detection Retrieval-Augmented Generation for Understanding News".**
 
 ## Overview
 
@@ -116,9 +116,11 @@ Participants should follow the standard TREC run format below and submit their r
 
 ## Evaluation
 
-NIST assessors will judge the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
-Evaluation details are to be determined.
-As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.
+NIST assessors judged the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
+Here are the assessing instructions: [instructions.pdf](/assessing_instructions.pdf).
+Please refer to our track overview paper for detailed result analysis.
+<!--Evaluation details are to be determined.-->
+<!--As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.-->
 
 ## Q&A
 
@@ -157,7 +159,7 @@ As part of the Task 1 evaluation, we will consider the overlap between the quest
 <table>
     <tr>
         <th><img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Hg46RfsAAAAJ&citpid=7" alt="Dake Zhang" title="picture_dake_zhang"/></th>
-        <td><b>Dake Zhang</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://zhangdake.tech/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/zhangdake/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/ZhangDake1998" target="_blank">Twitter</a></td>
+        <td><b>Dake Zhang</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://zhangdake.tech/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/zhangdake/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/ZhangDake1998" target="_blank">X</a></td>
     </tr>
     <tr></tr>
     <tr>
@@ -167,7 +169,7 @@ As part of the Task 1 evaluation, we will consider the overlap between the quest
     <tr></tr>
     <tr>
         <td><img src="https://media.licdn.com/dms/image/v2/C4E03AQErvMuxAKS8Qw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1630422355651?e=1740614400&v=beta&t=1d22I9TSIY29IIpC5OMGQ1Flpxyk14x_f-XPkKrMblQ" /></td>
-        <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke" target="_blank">Twitter</a></td>
+        <td><b>Charles L. A. Clarke</b> <br> University of Waterloo <br> Waterloo, Ontario, Canada <br> <a href="https://plg.uwaterloo.ca/~claclark/" target="_blank">Website</a> &nbsp; <a href="https://www.linkedin.com/in/charlie-clarke-7714a82/" target="_blank">LinkedIn</a> &nbsp; <a href="https://twitter.com/claclarke" target="_blank">X</a></td>
     </tr>
 </table>
 
